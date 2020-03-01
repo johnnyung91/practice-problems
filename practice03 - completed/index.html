@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Practice 03</title>
+    </head>
+    <body>
+        <script>
+            function arrayReverse(array) {
+                var stringArray = [];
+                var numberArray = [];
+                var booleanArray = [];
+                var objectArray = [];
+                var nullArray = [];
+                var undefinedArray = [];
+                var multiArray = [];
+
+                for (var i = 0; i < array.length; i++) {
+                    switch (typeof array[i]) {
+                        case "string":
+                            stringArray.push(array[i]);
+                            break;
+                        case "number":
+                            numberArray.push(array[i]);
+                            break;
+                        case "boolean":
+                            booleanArray.push(array[i]);
+                            break;
+                        case "object":
+                            objectArray.push(array[i]);
+                            break;
+                        case "null":
+                            nullArray.push(array[i]);
+                            break;
+                        case "undefined":
+                            undefinedArray.push(array[i]);
+                            break;
+                        default:
+                            break;
+                    }
+                }
+
+                if (stringArray.length > 0) {
+                    multiArray.push(stringArray);
+                };
+
+                if (numberArray.length > 0) {
+                    multiArray.push(numberArray);
+                };
+
+                if (booleanArray.length > 0) {
+                    multiArray.push(booleanArray);
+                };
+
+                if (objectArray.length > 0) {
+                    multiArray.push(objectArray);
+                };
+
+                if (nullArray.length > 0) {
+                    multiArray.push(nullArray);
+                };
+
+                if (undefinedArray.length > 0) {
+                    multiArray.push(undefinedArray);
+                };
+
+                return multiArray;
+            }
+        </script>
+    </body>
+</html>
